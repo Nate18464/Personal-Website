@@ -1,0 +1,21 @@
+{
+  "name": "resume-web-app",
+  "version": "1.0.0",
+  "description": "A webapp to host resume information",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "buildsass": "sass ./UI/stylesheets/scss/:./UI/stylesheets/css/",
+    "buildsass_watch": "sass ./UI/stylesheets/scss/:./UI/stylesheets/css/ --watch",
+    "dev": "nodemon main.js"
+  },
+  "author": "Nathan Wong",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "sass": "^1.26.10"
+  }
+}

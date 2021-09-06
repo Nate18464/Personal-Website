@@ -1,0 +1,14 @@
+html {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: #eeeeee;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0px;
+}
