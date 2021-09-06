@@ -2,7 +2,7 @@ html {
   display: flex;
   height: 100%;
   width: 100%;
-  background-color: #eeeeee;
+  background-color: #e0e0e0;
 }
 
 body {
@@ -11,4 +11,66 @@ body {
   width: 100%;
   font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
   margin: 0px;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: rgba(127,255,212,.8);
+}
+
+#upperHeader {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+#lowerHeader {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+#lowerHeader div {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+#lowerHeader a {
+  color: blue;
+  font-size: 22px;
+}
+
+img {
+  margin: 15px;
+  width: 50%;
+}
+
+#overallBox {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#overallBox a {
+  color: blue;
+}
+
+#leftBox {
+  margin-left: 25px;
+  width: 35%;
+}
+
+#rightBox {
+  margin-right: 15px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: lighter;
 }
