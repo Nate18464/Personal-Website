@@ -14,4 +14,161 @@ body {
   width: 100%;
   font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
   margin: 0px;
+
+
+  header {
+    color: $text;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 21%;
+    background-color: black;
+    background: url('../../../Assets/background.jpg');
+    background-size: 100%;
+    //box-shadow: 0px 10px 5px lightgrey;
+    
+    div {
+      display: flex;
+      color: white;
+      background: rgba(0, 0, 0, 0.733);
+      flex-direction: column;
+      justify-content: center;
+      height: 70%;
+      width: auto;//58%;
+      margin: 0 30%;
+      text-shadow:
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px 1px 0 #000,
+         1px 1px 0 #000;
+
+      h1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 5px;
+        padding: 0px;
+        width: 100%;
+      }
+      
+      h3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 5px;
+        padding: 0px;
+        width: 100%;
+      }
+    }
+    
+
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      height: 30%;
+      width: 100%;
+      background: rgb(44, 44, 44);
+
+      a {
+        display: inherit;
+        color: white;
+        text-decoration: none;
+        background: rgb(44, 44, 44);
+        border: 0;
+        width: (100%/$navLinkCount) - 25%;
+        justify-content: center;
+        font-size: 21px;
+        font-weight: 500;
+        transition-duration: 150ms;
+        cursor: pointer;
+      }   
+      
+      a:hover, a:focus{
+        transition-duration: 270ms;
+        background: rgb(88, 88, 88);
+      }
+
+      a:active, a:disabled {
+        background: rgb(119, 119, 119);
+      }
+    }
+  }
+
+  #main {
+    display: inherit;
+    flex-direction: row;
+    color: $text;
+    flex-grow: 82;
+    padding: 1%;
+    margin: 0 14%;
+    width: 70%; 
+
+      ul {
+        img {
+          cursor: pointer;
+          width: 50px;
+          border: 1px black solid;
+        }
+        .subheader {
+          font-weight: bold;
+        }
+      }
+
+      h2 {
+        width: 100%;
+        display: inherit;
+        height: 5%;
+      }
+      .hide {
+        display: none;
+      }
+
+      .sideBar {
+        display: flex;
+        flex-direction: column;
+        width: 37%;
+        padding-right: 8px;
+
+        img {
+          width: 76%;
+          margin: 1em 0;
+          border: 2px solid #1e1e1e;
+          border-radius: 0.5%;
+        }
+
+        p, h4 {
+          margin: 0;
+        }
+      }
+
+      .mainCol {
+        display: inherit;
+        flex-direction: column;
+        width: 63%;
+        padding-left: 8px;
+      }
+    
+  }
+
+  footer {
+    display: inherit;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 1.5%;
+    padding: 5px;
+    color: lighten($color: $text, $amount: 60);
+    background-color: black;  
+  
+    p {
+      margin: 0px;
+    }
+  }
 }
+
+a {
+  color: #00B7FF;
+}
+
