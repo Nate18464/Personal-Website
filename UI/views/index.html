@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Nathan Wong</title>
-  <link rel="stylesheet" href="/stylesheets/css/styles.css">
+  <link rel="stylesheet" href="../stylesheets/css/styles.css">
 </head>
 
 <body>
@@ -32,6 +32,7 @@
       <li>React</li>
       <li>Node.js</li>
       <li>Express</li>
+
       <h3>Intermediate Skills</h3>
       <li>Python</li>
       <li>C++</li>
@@ -41,6 +42,8 @@
       <li>JavaScript</li>
       <li>Shell Scripting (including sed and awk)</li>
       <li>tkinter</li>
+      <li>WebGL</li>
+      <li>RISC-5 Assembler</li>
       <h3>Familiar Topics</h3>
       <li>Sorting Algorithms</li>
       <li>A Star Algorithm</li>
@@ -49,6 +52,21 @@
       <li>ANN</li>
       <li>Data Structures</li>
       <li>Object Oriented Programming</li>
+
+      <h3>Related Coursework</h3>
+      <li>ECS 36A - Programming</li>
+      <li>ECS 36B - Object-Oriented Programming</li>
+      <li>ECS 36C - Data Structures</li>
+      <li>ECS 50 - Machine Dependent Programming</li>
+      <li>ECS 120 - Theory Computation</li>
+      <li>ECS 154A - Computer Architecture</li>
+      <li>ECS 122A - Algorithm Design & Analysis</li>
+      <li>ECS 132 - Probability & Statistical Models for CS</li>
+      <li>ECS 122B - Algorithm Design & Analysis</li>
+      <li>ECS 150 - Operating Systems</li>
+      <li>ECS 162 - Web Programming</li>
+      <li>ECS 171 - Machine Learning</li>
+      <li>ECS 175 - Computer Graphics</li>
     </div>  
 
     <div id="rightBox">
@@ -71,23 +89,42 @@
       <li>Fill out forms and send in information by deadlines</li>
       <li>Manage budget for the year</li>
 
-      <h3>Related Coursework</h3>
-      <li>ECS 36A - Programming</li>
-      <li>ECS 36B - Object-Oriented Programming</li>
-      <li>ECS 36C - Data Structures</li>
-      <li>ECS 50 - Machine Dependent Programming</li>
-      <li>ECS 120 - Theory Computation</li>
-      <li>ECS 154A - Computer Architecture</li>
-      <li>ECS 122A - Algorithm Design & Analysis</li>
-      <li>ECS 132 - Probability & Statistical Models for CS</li>
-      <li>ECS 122B - Algorithm Design & Analysis</li>
-      <li>ECS 162 - Web Programming</li>
-      <li>ECS 171 - Machine Learning</li>
-
       <h3>Projects</h3>
       <a href="https://github.com/Nate18464/WorldVaccination"><h4>People Fully Vaccinated Predictor</h4></a>
       <li>Research, Visualizations, and UI app to make predictions</li>
       <li>Tests Linear, Polynomial, Logistic, Logistic Polynomial, and Logistic Logarithmic curves</li>
+      <h4>RISC-5 Operating System Firmware</h4>
+      <li>Used a RISC-5 Simulator Created by Professor Nitta</li>
+      <li>Implimented:</li>
+      <li>Context Switching</li>
+      <li>Threading API</li>
+      <li>Mutexes</li>
+      <li>Handling syscalls to write to the screen</li>
+      <li>Handling input to a controller as part of the simulator</li>
+      <li>Created Interrupt Handler to handle timer interrupts, scheduling threads at time intervals</li>
+      <li>Created an API to work with graphics that handled backgrounds, large sprites, small sprites, and color palletes</li>
+      <li>For the graphics, update specific memory locations that the simulator has laid out</li>
+      <li>This is similar to how software would update specific memory locations for hardware</li>
+      <h4>Basic Shell</h4>
+      <li>Implimented cd, ls, pwd, and ff as handled by the program</li>
+      <li>Offloads other bash commands to the bash shell using execvp</li>
+      <li>Uses forking in order to parallelize work</li>
+      <li>Uses piping in order to handle piping from one command to another</li>
+      <h4>Interactive 2-D Graphics Drawing Application</h4>
+      <li>Uses WebGL to draw points, lines, triangles, or squares on a screen</li>
+      <li>Takes input to toggle between two different colors to draw with</li>
+      <li>Takes input to toggle between an outline or filled drawing</li>
+      <li>Handles resizing of the screen</li>
+      <h4>Interactive 3-D Graphics Viewer</h4>
+      <li>Uses WebGL in order to display multiple objects</li>
+      <li>Impliments Phong and Gouraud shading</li>
+      <li>Impliments texture mapping</li>
+      <li>Takes in a scene file in order to display a 3-D Scene</li>
+      <li>The scene file takes in the camera, lighting, and objects</li>
+      <li>Objects are passed in standard obj format with only triangles</li>
+      <li>Transforms from local to global to view to screen coordinates by multiplying transformation matrices</li>
+      <li>The user can click and drag to move the scene or right click to zoom in and out</li>
+      <li>The user can raycast to select an object that then can be translated and scaled in the scene</li>
       <h4>Various Games</h4>
       <a href="https://github.com/Nate18464/Hearts"><h4>Hearts</h4></a> 
       <li>Created different heuristics to test what basic strategies work best</li>
